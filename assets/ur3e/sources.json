@@ -1,0 +1,352 @@
+{
+  "repository": "https://github.com/UniversalRobots/Universal_Robots_ROS2_Description",
+  "commit": "6662e15f32c23c12ece57d0050aee9a716e4fc41",
+  "description": "Official UR3e visual meshes and rigid-body parameters, adapted from the project's local conversion.",
+  "modifications": "All six joints enabled; simulation-only torque motors and armature added; TCP at flange; contacts disabled for the external-force demo.",
+  "visual_meshes": {
+    "base": [
+      {
+        "file": "base_00.obj",
+        "rgba": [
+          0.2784314,
+          0.2784314,
+          0.2784314,
+          1.0
+        ],
+        "material": "JointGrey-material",
+        "sha256": "25adc49902cf28cad7f9eabbc1cbf0d9943e1a4ae566d44990b806a02dedebaf"
+      },
+      {
+        "file": "base_01.obj",
+        "rgba": [
+          0.03310248,
+          0.03310248,
+          0.03310248,
+          1.0
+        ],
+        "material": "Black-material",
+        "sha256": "ddd1e0eb8adef5a7239b565d1f402fa04cb3e15dbd9e5c3530c5ea54e0d44c1e"
+      }
+    ],
+    "shoulder": [
+      {
+        "file": "shoulder_00.obj",
+        "rgba": [
+          0.2784314,
+          0.2784314,
+          0.2784314,
+          1.0
+        ],
+        "material": "JointGrey-material",
+        "sha256": "8edd0b36fb7ea6bee255210d95c1c15f772713c763383233e8f029df2fde72c6"
+      },
+      {
+        "file": "shoulder_01.obj",
+        "rgba": [
+          0.03310248,
+          0.03310248,
+          0.03310248,
+          1.0
+        ],
+        "material": "Black-material",
+        "sha256": "06e7e3b071c7721102f583016f12e9b8fb1de119fac9572aa146d8f964a92055"
+      },
+      {
+        "file": "shoulder_02.obj",
+        "rgba": [
+          0.7,
+          0.7,
+          0.7,
+          1.0
+        ],
+        "material": "DAE_unassigned_default",
+        "sha256": "28123f498fb0bcc55b0e7170a8f1564ec5fd5da36fea86a67a5098a01f3742e3"
+      },
+      {
+        "file": "shoulder_03.obj",
+        "rgba": [
+          0.4901961,
+          0.6784314,
+          0.8,
+          1.0
+        ],
+        "material": "URBlue-material",
+        "sha256": "17c1302787cd76aad9b616ba0b1a23cfa0273750e22372483286a9b9b700c295"
+      }
+    ],
+    "upper_arm": [
+      {
+        "file": "upper_arm_00.obj",
+        "rgba": [
+          0.8203922,
+          0.8203922,
+          0.8203922,
+          1.0
+        ],
+        "material": "LinkGrey-material",
+        "sha256": "a2cb2bb871603d6d160b3c1729b5515dbb0359c1bed082d5e37540cc3e733377"
+      },
+      {
+        "file": "upper_arm_01.obj",
+        "rgba": [
+          0.2784314,
+          0.2784314,
+          0.2784314,
+          1.0
+        ],
+        "material": "JointGrey-material",
+        "sha256": "f5284376aaf784df45485ad7678ea61ce93a684b066fab37594147e80574e9d6"
+      },
+      {
+        "file": "upper_arm_02.obj",
+        "rgba": [
+          0.7,
+          0.7,
+          0.7,
+          1.0
+        ],
+        "material": "DAE_unassigned_default",
+        "sha256": "7c14789500cfad4fd19dddbc25ed244aa404bfc6fd0c6ccadb5c9657e2904fcf"
+      },
+      {
+        "file": "upper_arm_03.obj",
+        "rgba": [
+          0.4901961,
+          0.6784314,
+          0.8,
+          1.0
+        ],
+        "material": "URBlue-material",
+        "sha256": "e7a10720a6b1b25e7c35c726a08ce0f221273e464478ee0cfc268dee2cf4d457"
+      },
+      {
+        "file": "upper_arm_04.obj",
+        "rgba": [
+          0.2784314,
+          0.2784314,
+          0.2784314,
+          1.0
+        ],
+        "material": "JointGrey-material",
+        "sha256": "55ddadfb8fcc980e6dd04c3281668455ccd0e51305bcc4e9b28d404b8b0023ec"
+      },
+      {
+        "file": "upper_arm_05.obj",
+        "rgba": [
+          0.03310248,
+          0.03310248,
+          0.03310248,
+          1.0
+        ],
+        "material": "Black-material",
+        "sha256": "1c0e69992dfe4b98a70386e3ed4753613f545cd89384e73a34e43f7a44f5e6c6"
+      },
+      {
+        "file": "upper_arm_06.obj",
+        "rgba": [
+          0.8203922,
+          0.8203922,
+          0.8203922,
+          1.0
+        ],
+        "material": "LinkGrey-material",
+        "sha256": "170c4ba0cb6ce54b838986005109120976327ccc2af68ee8f4573b84acb42791"
+      },
+      {
+        "file": "upper_arm_07.obj",
+        "rgba": [
+          0.03310248,
+          0.03310248,
+          0.03310248,
+          1.0
+        ],
+        "material": "Black-material",
+        "sha256": "da65cd2ae39a23e4541e81e3d8187b6d040e758d9455341f5da827af69bcf57a"
+      },
+      {
+        "file": "upper_arm_08.obj",
+        "rgba": [
+          0.4901961,
+          0.6784314,
+          0.8,
+          1.0
+        ],
+        "material": "URBlue-material",
+        "sha256": "89014cbbe960f2da4965dadab9ed6e83d03ba4d2d2268f468a062c10556e0511"
+      },
+      {
+        "file": "upper_arm_09.obj",
+        "rgba": [
+          0.03310248,
+          0.03310248,
+          0.03310248,
+          1.0
+        ],
+        "material": "Black-material",
+        "sha256": "79ab78b8f9bcf9f3a8b8183cfafc6f8f1d2b8c658a95503400de1649ca0211dc"
+      }
+    ],
+    "forearm": [
+      {
+        "file": "forearm_00.obj",
+        "rgba": [
+          0.2784314,
+          0.2784314,
+          0.2784314,
+          1.0
+        ],
+        "material": "JointGrey-material",
+        "sha256": "1fe461e8c6103f34487cd7382f0d0c49f7e0f78533b3421de5bc707092b4b407"
+      },
+      {
+        "file": "forearm_01.obj",
+        "rgba": [
+          0.2784314,
+          0.2784314,
+          0.2784314,
+          1.0
+        ],
+        "material": "JointGrey-material",
+        "sha256": "b492546e54c9e63f86c1207b178137b2fc87067ded262bd0f83264f1159175cb"
+      },
+      {
+        "file": "forearm_02.obj",
+        "rgba": [
+          0.03310248,
+          0.03310248,
+          0.03310248,
+          1.0
+        ],
+        "material": "Black-material",
+        "sha256": "0cef120b7e574736d4ff3e6d9f2409407b64e71ab2cda9a58346422b3564a720"
+      },
+      {
+        "file": "forearm_03.obj",
+        "rgba": [
+          0.8203922,
+          0.8203922,
+          0.8203922,
+          1.0
+        ],
+        "material": "LinkGrey-material",
+        "sha256": "86c1c3a141b2ca8b325f05b4a3e2f6ae7025967a94cb725fb6d368767672168b"
+      },
+      {
+        "file": "forearm_04.obj",
+        "rgba": [
+          0.03310248,
+          0.03310248,
+          0.03310248,
+          1.0
+        ],
+        "material": "Black-material",
+        "sha256": "36f7668d52a3617ae3cfadfd56f307980b98ce725c8e777930a09c8609463dfa"
+      },
+      {
+        "file": "forearm_05.obj",
+        "rgba": [
+          0.4901961,
+          0.6784314,
+          0.8,
+          1.0
+        ],
+        "material": "URBlue-material",
+        "sha256": "fee76f543b931789de9327258e2ad4b23eef10116a4650889c380a2bff3bb830"
+      },
+      {
+        "file": "forearm_06.obj",
+        "rgba": [
+          0.03310248,
+          0.03310248,
+          0.03310248,
+          1.0
+        ],
+        "material": "Black-material",
+        "sha256": "f770548da00ad6e9f9e42094a3c26a00200f9ef080ca28d15704eee0349c4548"
+      }
+    ],
+    "wrist_1": [
+      {
+        "file": "wrist_1_00.obj",
+        "rgba": [
+          0.2784314,
+          0.2784314,
+          0.2784314,
+          1.0
+        ],
+        "material": "JointGrey-material",
+        "sha256": "a5791fcc00e73e45064d2f94458566ebfd47370ee0c3b993f7dfcbc8a5be7f8d"
+      },
+      {
+        "file": "wrist_1_01.obj",
+        "rgba": [
+          0.4901961,
+          0.6784314,
+          0.8,
+          1.0
+        ],
+        "material": "URBlue-material",
+        "sha256": "ec9ec8d602956e174dc9eafb932552b6dcc029d57ce5dd6cb65943de6738a049"
+      },
+      {
+        "file": "wrist_1_02.obj",
+        "rgba": [
+          0.03310248,
+          0.03310248,
+          0.03310248,
+          1.0
+        ],
+        "material": "Black-material",
+        "sha256": "774c8109779339abb90c4518ac5a39abd371d10c32852870e989502af37a31fe"
+      }
+    ],
+    "wrist_2": [
+      {
+        "file": "wrist_2_00.obj",
+        "rgba": [
+          0.2784314,
+          0.2784314,
+          0.2784314,
+          1.0
+        ],
+        "material": "JointGrey-material",
+        "sha256": "9692a347d187ce3cf3382460b32fe277ed18e83fafb13032e99d77f253e45818"
+      },
+      {
+        "file": "wrist_2_01.obj",
+        "rgba": [
+          0.03310248,
+          0.03310248,
+          0.03310248,
+          1.0
+        ],
+        "material": "Black-material",
+        "sha256": "d4eb403102c36bdffb599b7bde61c7da16162d5cf7ee9ceb53322d162cda447b"
+      },
+      {
+        "file": "wrist_2_02.obj",
+        "rgba": [
+          0.4901961,
+          0.6784314,
+          0.8,
+          1.0
+        ],
+        "material": "URBlue-material",
+        "sha256": "aacd9a410791c0b8225176aca291f5dcea37466aa3113921ca94d3af1553a748"
+      }
+    ],
+    "wrist_3": [
+      {
+        "file": "wrist_3_00.obj",
+        "rgba": [
+          0.8203922,
+          0.8203922,
+          0.8203922,
+          1.0
+        ],
+        "material": "LinkGrey-material",
+        "sha256": "6f89d575faf339e8101eab230b488e063b0a584e97c9c07121f9516bde40bd06"
+      }
+    ]
+  }
+}

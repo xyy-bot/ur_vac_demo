@@ -1,0 +1,19 @@
+# Generated experiment results and Python caches.
+/outputs/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local environments, IDE settings, and credentials.
+.venv/
+venv/
+.idea/
+.vscode/
+.env
+.env.*
+
+# Operating-system files.
+.DS_Store
+Thumbs.db
