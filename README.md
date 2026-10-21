@@ -63,7 +63,7 @@ motion along X over `reference_duration` seconds.
 | `__init__.py` | Mark the directory as a Python package |
 
 `assets/` contains the robot model, `data/` contains replay input, and
-`outputs/` receives run results. `tests/` is for instructor checks.
+`outputs/` receives run results.
 No additional module is needed to change a basic experiment.
 
 ## Follow one control cycle
@@ -148,7 +148,7 @@ starting the control loop. Zeroing failure aborts the run. Replay/virtual modes
 do not zero the sensor. Configure the TCP, payload, and RTDE access first. Set the displacement
 and speed limits for your setup. Ctrl+C, completion, and loop errors attempt
 to stop and disconnect. The real interface still needs instructor validation
-on hardware; automated tests use mocked RTDE.
+on hardware before student experiments.
 
 `robot_interface.py` implements real RTDE access. `mujoco_interface.py`
 implements virtual-robot motion using a simple joint servo. They share the
@@ -179,21 +179,5 @@ covers the relative admittance model, not the energy supplied by a moving refere
 Run results are generated locally and excluded from Git. The `outputs/`
 folder is created automatically on the first run.
 
-## Instructor checks
-
-From the parent of the `ur_vac_demo` folder, run:
-
-```console
-python -m unittest discover -s ur_vac_demo/tests
-```
-
-The checks cover RK4, parameter constraints, force input, MuJoCo motion,
-reference derivatives, and result statistics. RTDE checks use mocks to verify
-HIL zeroing and shutdown without connecting to or moving a real robot.
-
-## Robot assets
-
-The bundled UR3e model includes its source information in
-`assets/ur3e/sources.json` and its third-party license in `assets/ur3e/LICENSE`.
 
 
